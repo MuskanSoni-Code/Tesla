@@ -1,0 +1,153 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasla</title>
+</head>
+<style>
+    * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+
+    svg {
+        height: 15px;
+        margin-top: 15px;
+    }
+</style>
+
+<body>
+    <header
+        style="height: 52px;background-color: beige;display: flex;justify-content: space-between;align-items: center;padding: 0px 32px;">
+        <svg class="tds-icon tds-icon-logo-wordmark tds-site-logo-icon" viewBox="0 0 342 35"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill="currentColor"
+                d="M0 .1a9.7 9.7 0 0 0 7 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 0 0 7-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 0 0 6-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 0 0-8.7 7h39.9v-21h-31.2v-7zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7m0 13.8h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7m0 14.1h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7M308.5 7h26a9.6 9.6 0 0 0 7-7h-40a9.6 9.6 0 0 0 7 7">
+            </path>
+        </svg>
+
+        <div style="display: flex;justify-content: center;gap: 22px;font-size: 20px;">
+            <div>Vehicle</div>
+            <div>Energy</div>
+            <div>Charge</div>
+            <div>Discover</div>
+            <div>Shop</div>
+        </div>
+        <div>
+            <div style="margin-top: 0%;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-question-circle" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                    <path
+                        d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-person-circle" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                    <path fill-rule="evenodd"
+                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                </svg>
+            </div>
+        </div>
+    </header>
+    <div
+        style="background-image: url(https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Promo-Meet-Model-Y-Desktop.jpg);height: 700px;background-size: cover;border: 2px solid white;">
+        <h1 style="color: white;margin-top: 9%;display: flex;justify-content: center;">$ 7,500 Federal Tax Craedit
+            Ending </h1>
+        <p style="color: white;text-decoration: underline;margin-top: 17px;margin-left: 0%;">
+            Limited Inventatory- Take Inventatory Tax
+        </p>
+    </div>
+    <div style="display: flex;gap: 20px;height: 400px;overflow-x: auto
+    ;">
+        <img src="/WhatsApp Image 2025-07-28 at 16.26.45_c9b2f24e.jpg" alt="">
+        <img src="./Red Car.png" alt="">
+        <img src="./Homepage-Card-Cybertruck-Mobile-US (1).png" alt="">
+        <img src="./green car run.png" alt="">
+        <img src="./Red motion.png" alt="">
+    </div>
+    <div
+        style="background-color:rgb(225, 223, 223);display: flex;overflow-y: auto;height: 160px;gap: 600px;display: inline-block;width: 580px;overflow-width:non">
+        <h2>Current Offers</h2><br>
+        <p>Limited inventory. Take delivery today.</p><br>
+        <input type="text" placeholder="Learn more">
+        <img style="width: 290px;height: 160px;margin-left: 315px;margin-top: 0%;"
+            src="Homepage-Grid-Current-Offers.jpg">
+    </div>
+    <div
+        style="background-color:rgb(225, 223, 223);display: flex;overflow-y: auto;height: 160px;display: inline-block;width: 580px;gap: 900px;">
+        <h2>Current Offers</h2><br>
+        <p>Limited inventory. Take delivery today.</p><br>
+        <input type="text" placeholder="Learn more">
+        <img style="height: 305px;width: 305px;" src="c.png">
+    </div>
+    <div role="none" class="tds-video-player__overlay"></div>
+    <div style="height: 384px;display: flex;overflow-x: auto;gap: 40px;">
+        <img src="FSD-Worlds-First-Autonomous-Car-Delivery-Poster.png">
+        <img style="width: 684;height: 384px;" src="Homepage-Worlds-First-Autonomous-Car-Delivery-Mobile.png">
+    </div>
+    <div>
+        <h1>Find your Charge</h1>
+        <p>View the Network of Tasla Supercharge and Destination Charges available Near You.</p>
+        <h1>12,855</h1>
+        <p>Supercharger</p>
+        <h1>4,601</h1>
+        <p>Destination</p>
+        <button style="padding: 1%;background-color: black;color: white;">
+            View Network
+        </button>
+        <button style="padding: 1%;background-color:rgb(242, 234, 234);color:black;border: none;">
+            Learn More
+        </button>
+    </div>
+    <div style="height: 384px;overflow-x: scroll;display: flex;gap: 40px;width: 100%;">
+        <img src="roof.png">
+        <img src="b.png">
+        <img src="d.png">
+        <img src="a.jpg">
+    </div>
+    <div style="font-size: smaller;">
+        <div>
+            <p>
+                1 $7,500 federal tax credit available to eligible buyers who purchase and take delivery of a qualifying
+                vehicle by September 30, 2025. Leases not eligible. Not all model trims will qualify. MSRP cap of
+                $80,000
+                for Cybertruck and Model Y; $55,000 for Model 3 applies. Consult a tax professional regarding your
+                personal
+                eligibility.
+            </p>
+        </div>
+        <br>
+        <div>
+            <p>
+                2 Model X All-Wheel Drive starts at $91,630. Price includes Destination and Order Fees but exclude taxes
+                and
+                other fees. Subject to change. Vehicle shown has upgrades that will increase the price.
+            </p>
+        </div>
+        <br>
+        <div>
+            3 Model S All-Wheel Drive starts at $86,630. Price includes Destination and Order Fees but exclude taxes and
+            other fees. Subject to change. Vehicle shown has upgrades that will increase the price.
+        </div>
+    </div>
+    <div style="display: flex;justify-content: center;gap: 22px; margin-top: 90px;margin-bottom: 30px;">
+        <div>Tesla © 2025</div>
+        <div>Privacy & legal</div>
+        <div>Vehicle Recalls</div>
+        <div>Contact</div>
+        <div>News</div>
+        <div>Get Updates</div>
+        <div>Locations</div>
+        <div>Learn</div>
+    </div>
+</body>
+
+</html>
